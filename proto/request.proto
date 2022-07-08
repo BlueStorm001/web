@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto3;
+option go_package = "./";
+message Request {
+  string RemoteAddr = 1;
+  string Host = 2;
+  string Proto = 3;
+  string Method = 4;
+  string Path = 5;
+  string HttpStatusCode = 6;
+  string ContentType = 7;
+  int32 ContentLength = 8;
+  repeated string Header = 9;
+  bytes Body = 10;
+  int32 ResultCode = 11;
+  string Signal = 12;
+  string Message = 13;
+}
